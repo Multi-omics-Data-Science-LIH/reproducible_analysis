@@ -1,0 +1,45 @@
+---
+title: "Data cleaning"
+author: "Reka Toth"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Data cleaning}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+
+## Clean data:
+- one information, one variable
+- one row per observation
+- data and type matches
+- same name for same categories
+- clean factors, if necessary
+
+
+Exercise
+
+1. Clean up the following dataset:
+messy_data.csv
+
+```{r}
+
+library(summarytools)
+
+view(dfSummary(messy_data))
+
+
+```
+
+
+
+
+
